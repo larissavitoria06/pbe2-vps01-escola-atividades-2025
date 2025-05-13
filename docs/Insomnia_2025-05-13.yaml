@@ -1,0 +1,340 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1741693675408
+  modified: 1741693675408
+collection:
+  - name: PetShop
+    meta:
+      id: fld_051697b40905469f82ef7d82d2dd9c15
+      created: 1742910462680
+      modified: 1742910462680
+      sortKey: -1742910462680
+    children:
+      - name: Cliente
+        meta:
+          id: fld_7fb17d1fc228463dad83cbdacdf2316e
+          created: 1742910524647
+          modified: 1742910524647
+          sortKey: -1742910524647
+  - name: Pedidos Patterns
+    meta:
+      id: fld_1d6ee0c8998747cf854c51ceb0062080
+      created: 1745934987658
+      modified: 1745935018315
+      sortKey: -1745934987658
+    children:
+      - name: Pedidos
+        meta:
+          id: fld_651c0659842a4617b834995ed5e4249e
+          created: 1745935053946
+          modified: 1745935082647
+          sortKey: -1745935053946
+  - name: app88taxi
+    meta:
+      id: fld_e3c164d9add04ae7b264355008179a28
+      created: 1746622153067
+      modified: 1746622163982
+      sortKey: -1746622153067
+    children:
+      - name: passageiro
+        meta:
+          id: fld_5c61aae760604e5fa6ea409cf495b0f2
+          created: 1746622286018
+          modified: 1746626148138
+          sortKey: -1746622286018
+      - name: motorista
+        meta:
+          id: fld_04deb884ad914630b55c04662c21d51a
+          created: 1746623930050
+          modified: 1746637830512
+          sortKey: -1746623930050
+  - name: escola
+    meta:
+      id: fld_b0c436224f084d6ab0bed89da1700efe
+      created: 1747155416744
+      modified: 1747156841366
+      sortKey: -1747156821779
+    children:
+      - name: alunos
+        meta:
+          id: fld_b0f52f69333149e78ab30fb9af531287
+          created: 1747156821679
+          modified: 1747156845962
+          sortKey: -1747155423315
+        children:
+          - url: localhost:3006/al
+            name: read alunos
+            meta:
+              id: req_0cc3586b6a6e4988816f9e99b2b13de9
+              created: 1747155423215
+              modified: 1747166048990
+              isPrivate: false
+              sortKey: -1747156857643
+            method: GET
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "ra": "12345",
+                  "nome": "leo Silva",
+                  "email": "leo@example.com",
+                  "telefone": "999999999",
+                  "tipo": "Aluno"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/10.3.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:3006/al
+            name: create alunos
+            meta:
+              id: req_780320be44cc4eeeb7f8ec680d697ced
+              created: 1747164249200
+              modified: 1747166113112
+              isPrivate: false
+              sortKey: -1747164249200
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "ra": "03644353",
+                  "nome": "tata",
+                  "email": "tata.oliveira@example.com",
+                  "telefone": "987654321",
+                  "tipo": "aluna"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:3006/al/1234567890
+            name: update alunos
+            meta:
+              id: req_f0f190396abe4d4fad6c281288c9ed44
+              created: 1747164502183
+              modified: 1747165640214
+              isPrivate: false
+              sortKey: -1747164314893.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "alunoRa": "1234567890",
+                  "dataInicio": "2025-05-13", 
+                  "dataEntregue": "2025-05-20", 
+                  "nota": 8,  
+                  "peso": 2.5,
+                  "parcial": 4.5 
+
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3006/al/1234567890
+            name: delete alunos
+            meta:
+              id: req_1fe40281c3264cb7b60204606729c383
+              created: 1747164933409
+              modified: 1747165308856
+              isPrivate: false
+              sortKey: -1747164933409
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: atividade
+        meta:
+          id: fld_8050eba66b8f41a9b2a44e6ab4c59998
+          created: 1747161881892
+          modified: 1747161881892
+          sortKey: -1747161881892
+        children:
+          - url: localhost:3006/at
+            name: atividades
+            meta:
+              id: req_20d33ea2c31541e08d74db1ff337705e
+              created: 1747161888294
+              modified: 1747165433287
+              isPrivate: false
+              sortKey: -1747161888294
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "ra": "12345",
+                  "nome": "João Silva",
+                  "email": "joao@example.com",
+                  "telefone": "999999999",
+                  "tipo": "Aluno"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:3006/
+            name: New Request
+            meta:
+              id: req_beff518141704339a5ea6a38d44be4b8
+              created: 1747165335052
+              modified: 1747165477095
+              isPrivate: false
+              sortKey: -1747165335052
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: localhost:3006/at/0987654321
+            name: New Request
+            meta:
+              id: req_601c60ef1cb040f8bd7cf4f0e05e5d79
+              created: 1747165338379
+              modified: 1747165725427
+              isPrivate: false
+              sortKey: -1747165338379
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "alunoRa": "1234567890",
+                  "dataInicio": "2025-05-13", 
+                  "dataEntregue": "2025-05-20", 
+                  "nota": 8, 
+                  "peso": 2.5,
+                  "parcial": 4.5  
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: New Request
+            meta:
+              id: req_53b99e449d9a49ffa1c712022fbdcc78
+              created: 1747165340480
+              modified: 1747165370327
+              isPrivate: false
+              sortKey: -1747165340480
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.1.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - url: http://localhost:3006/al
+        name: teste
+        meta:
+          id: req_58243564b14a411099029c07e1b2852a
+          created: 1747156835194
+          modified: 1747163821558
+          isPrivate: false
+          sortKey: -1747161881992
+        method: GET
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "ra": "123456",
+              "nome": "João Silva",
+              "email": "joao@example.com",
+              "numero": "123456789",
+              "tipo": "aluno"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.3.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742910416940
+    modified: 1742910416940
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742910416853
+    modified: 1742910416853
+    isPrivate: false
