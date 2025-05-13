@@ -11,15 +11,18 @@ const create = async (req, res) => {
         return res.status(400).json({ error: error.message });
     }
 }
-
 const read = async (req, res) => {
     try {
+        console.log('Fetching alunos...');
         const alunos = await prisma.aluno.findMany();
+        console.log('Alunos:', alunos);
         return res.json(alunos);
     } catch (error) {
+        console.error('Error fetching alunos:', error);
         return res.status(500).json({ error: error.message });
     }
 }
+
 
 const readOne = async (req, res) => {
     try {

@@ -11,9 +11,10 @@ model Aluno {
   ra String @id @db.VarChar(10)
   nome String @db.VarChar(100)
   email String @db.VarChar(100)
-  telefones Telefone[]
-  atividades Atividades[] 
+  telefone String @db.VarChar(20)
+  tipo String @db.VarChar(10)
 }
+
 
 model Telefone {
   id Int @id @default(autoincrement())
