@@ -24,7 +24,7 @@ model Telefone {
   alunoRa  String @db.VarChar(10)
   numero   String @db.VarChar(20)
 
-  aluno    Aluno  @relation(fields: [alunoRa], references: [ra]) // Relacionamento com Aluno
+  aluno    Aluno  @relation(fields: [alunoRa], references: [ra]) 
 }
 
 model Atividades {
@@ -36,5 +36,5 @@ model Atividades {
   peso        Float
   parcial     Float?
 
-  aluno       Aluno     @relation(fields: [alunoRa], references: [ra]) // Relacionamento com Aluno
+  aluno       Aluno     @relation(fields: [alunoRa], references: [ra]) 
 }
